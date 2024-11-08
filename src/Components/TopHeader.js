@@ -1,6 +1,10 @@
 
 import Menu from "./Menu";
 import Menu_Pencil from "./Menu_Pencil";
+import Ldr from "./Ldr";
+import Logo from "./Logo";
+
+
 
 
 export default function TopHeader() {
@@ -10,10 +14,14 @@ export default function TopHeader() {
 
 
 
-        return (<div>
+        return (<div className="flex w-full items-center justify-between">
 
 
-                <Menu_Pencil />
+                <Menu_Pencil  />
+                <Ldr  />
+                <Logo />
+
+
                 {/* <Menu /> */}
 
 
