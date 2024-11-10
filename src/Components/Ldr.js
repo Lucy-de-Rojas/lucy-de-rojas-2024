@@ -1,8 +1,8 @@
 
 export default function Ldr() {
 
-return (<div className="flex-1 flex justify-center">
-<h1>Ldr</h1>
+return (<div className="flex-1 flex justify-center text-white bg-red-950">
+<h1 className="text-3x">LdR</h1>
 
 
 </div>)};

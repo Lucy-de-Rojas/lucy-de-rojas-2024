@@ -5,7 +5,12 @@ import Link from "next/link"
 
 export default function Menu () {
 
-return (<div className="flex flex-row w-full bg-red-600 text-white">
+return (<div className="w-full bg-red-500 text-white absolute left-[-100%] top-[200px]" id="menu">
+
+
+
+
+
 
 <Link href="/" className="flex-1 bg-blue-500 m-4 flex justify-center items-center min-w-1/7">HOME </Link>
 

@@ -3,3 +3,121 @@
 @tailwind utilities;
 
 
+@font-face {
+        font-family: "Abraka";
+        src: url("../../public/Fonts/Abrakadaboom.otf");
+}
+
+
+@font-face {
+        font-family: "Ango";
+        src: url("../../public/Fonts/Ango-Italica.ttf");
+}
+
+
+
+
+@font-face {
+        font-family: "Aston";
+        src: url(".../../../../public/Fonts/Astonpoliz.otf");
+}
+
+
+
+@font-face {
+        font-family: "Baloo";
+        src: url("../../public/Fonts/Baloo2-Bold.ttf");
+}
+
+
+@font-face {
+        font-family: "Baz";
+        src: url("../../public/Fonts/baz-Light.otf");
+}
+
+
+
+@font-face {
+        font-family: "Glimp";
+        src: url("../../public/Fonts/GlimpR-CondensedThin.ttf");
+}
+
+
+@font-face {
+        font-family: "Gomarice";
+        src: url("../../public/Fonts/gomarice_tofo_steak.ttf");
+}
+
+
+@font-face {
+        font-family: "Mukta";
+        src: url("../../public/Fonts/Mukta-Regular.ttf");
+}
+
+@font-face {
+        font-family: "MuktaMalar";
+        src: url("../../public/Fonts/MuktaMalar-Regular.ttf");
+}
+
+
+@font-face {
+        font-family: "MuktaVaani";
+        src: url("../../public/Fonts/MuktaVaani-Regular.ttf");
+}
+
+@font-face {
+        font-family: "Rint";
+        src: url("../../public/Fonts/RintBasic-Regular.ttf");
+}
+
+@font-face {
+        font-family: "Sovranix";
+        src: url("../../public/Fonts/Sovranix-Medium.otf");
+}
+
+
+@font-face {
+        font-family: "ZTRavinsfen";
+        src: url("../../public/Fonts/ZTRavigsfen-Regular.otf");
+}
+
+
+
+
+
+
+
+h1 {
+        font-size: 3rem;
+
+
+        font-family: "Aston";
+
+        /* font-family: "Sovranix"; */
+}
+
+
+
+
+#pencil {
+        transition: transform 750ms;
+}
+
+
+#ruler {
+        transition: transform 750ms;
+
+}
+
+
+#circle {
+        opacity: 0;
+
+        transition: opacity 750ms;
+
+}
+
+
+#menu {
+        transition: left 1000ms;
+}
