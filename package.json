@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "update":"git add . && git commit -m 'auto update' && git push"
+    "lint": "next lint"
   },
   "dependencies": {
     "react": "19.0.0-rc-69d4b800-20241021",

@@ -100,12 +100,12 @@ h1 {
 
 
 #pencil {
-        transition: transform 750ms;
+        transition: all 750ms;
 }
 
 
 #ruler {
-        transition: transform 750ms;
+        transition: all 750ms;
 
 }
 
@@ -113,11 +113,11 @@ h1 {
 #circle {
         opacity: 0;
 
-        transition: opacity 750ms;
+        transition: all 750ms;
 
 }
 
 
 #menu {
-        transition: left 1000ms;
+        transition: all 1000ms;
 }
