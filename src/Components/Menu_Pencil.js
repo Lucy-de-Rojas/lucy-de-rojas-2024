@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 import {useState} from 'react';
-
+import RedLine from "./RedLine";
 
 
 
@@ -10,15 +10,28 @@ import {useState} from 'react';
 
 export default function Menu_Pencil () {
 
+
+
+
         const [open, setOpen] = useState(false);
 
 
 
         function handleClick() {
+
+
                 let pencil = document.getElementById("pencil");
                 let ruler = document.getElementById("ruler");
                 let circle = document.getElementById("circle");
                 let menu = document.getElementById("menu");
+
+
+                let whiteLine = document.getElementById("white");
+                // let redLine = document.getElementById("red");
+
+
+
+
 
 
                 // to close:
@@ -37,6 +50,15 @@ export default function Menu_Pencil () {
 
 
                         menu.style.left = "-100%";
+
+
+                        // red line hide:
+                        whiteLine.style.transform= "rotate(105deg)";
+
+
+
+
+
 
 
 
@@ -63,6 +85,24 @@ export default function Menu_Pencil () {
 
 
                         menu.style.left = "0";
+
+
+                        // red line reveal:
+                        whiteLine.style.transform = "rotate(-7deg)";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 }
 
 
@@ -94,8 +134,15 @@ return (<button className="relative flex-1 flex items-center"  onClick={handleCl
 
 
 
-
+{/* Circle: */}
 <Image src="/Media/Images/circle.png" id="circle" width={100} height={100} alt="image of several circles centralised together in Da Vinci style" className="ml-5" />
+
+
+
+
+
+{/* red Line: */}
+<RedLine />
 
 
 </button>)};

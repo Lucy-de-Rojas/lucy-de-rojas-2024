@@ -121,3 +121,13 @@ h1 {
 #menu {
         transition: all 1000ms;
 }
+
+
+
+
+#white  {
+        transition: all 1000ms;
+        transform: rotate(105deg);
+        /* transform-origin: 20% 32%; */
+        transform-origin: center;
+}
