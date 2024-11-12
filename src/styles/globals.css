@@ -123,11 +123,14 @@ h1 {
 }
 
 
-
+#red {
+        transform: rotate(-15deg);
+        transform-origin: center;
+}
 
 #white  {
         transition: all 1000ms;
+
         transform: rotate(105deg);
-        /* transform-origin: 20% 32%; */
         transform-origin: center;
 }
