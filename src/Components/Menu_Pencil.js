@@ -43,7 +43,7 @@ export default function Menu_Pencil () {
 
 
                         ruler.style.transform = "rotate(0deg)";
-                        // ruler.style.top = "30px";
+                        ruler.style.top = "30px";
 
 
                         circle.style.opacity = "0";
@@ -77,7 +77,7 @@ export default function Menu_Pencil () {
 
 
                         ruler.style.transform = "rotate(45deg)";
-                        // ruler.style.top = "40px";
+                        ruler.style.top = "35px";
 
 
 
@@ -123,7 +123,7 @@ return (<button className="relative flex-1 flex items-center"  onClick={handleCl
 
 
 {/* ruler: */}
-<Image src="/Media/Images/Ruler.png" alt="image of ruler as part of menu"  width={100} height={100}  className="absolute left-[20px] top-[35px]" id="ruler" />
+<Image src="/Media/Images/Ruler.png" alt="image of ruler as part of menu"  width={100} height={100}  className="absolute left-[20px] top-[30px]" id="ruler" />
 
 
 
