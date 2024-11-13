@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function Menu () {
 
-return (<div className="w-full  text-slate-800 font-bold absolute left-[-100%] top-[200px]" id="menu">
+return (<div className="w-full bg-white text-slate-800 font-bold absolute left-[-100%] top-[120px]" id="menu">
 
 
 
