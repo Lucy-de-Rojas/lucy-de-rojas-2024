@@ -10,9 +10,8 @@ export default function MenuBurger () {
 
 
 
-        function handleClick (event) {
-        //event.preventDefault();
-        //event.stopPropagatrion();
+        function handleClick () {
+                console.clear();
         console.log("Clicked!");
 
         let circles = document.getElementById("circles");
@@ -24,7 +23,7 @@ export default function MenuBurger () {
 
 
 
-        if(open) {
+        if(!open) {
                 setOpen(!open);
                 circles.style.opacity = 1;
                 ruler.style.transform = "rotate(45deg)";
