@@ -89,11 +89,7 @@
 
 h1 {
         font-size: 3rem;
-
-
         font-family: "Aston";
-
-        /* font-family: "Sovranix"; */
 }
 
 
@@ -101,26 +97,28 @@ h1 {
 
 #pencil {
         transition: all 750ms;
+        /* transform-origin: center; */
+
+        transform-origin: 40% 50%;
 }
 
 
 #ruler {
         transition: all 750ms;
+        /* transform-origin: center; */
+        transform-origin: 40% 45%;
 
 }
 
 
-#circle {
+#circles {
         opacity: 0;
-
         transition: all 750ms;
 
 }
 
 
-#menu {
-        transition: all 1000ms;
-}
+
 
 
 #red {
@@ -128,9 +126,32 @@ h1 {
         transform-origin: center;
 }
 
-#white  {
+#whiteLine  {
         transition: all 1000ms;
-
-        transform: rotate(105deg);
         transform-origin: center;
+        transform: rotate(90deg);
 }
+
+
+
+
+
+
+
+
+#menu {
+        transition: all 1000ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

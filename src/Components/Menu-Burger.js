@@ -1,10 +1,86 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px"
-	 height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-<g id="circle">
-	<g>
+import { useState } from "react";
+
+
+export default function MenuBurger () {
+
+
+        const [open, setOpen] = useState(false);
+
+
+
+
+
+        function handleClick (event) {
+        //event.preventDefault();
+        //event.stopPropagatrion();
+        console.log("Clicked!");
+
+        let circles = document.getElementById("circles");
+        let ruler = document.getElementById("ruler");
+        let pencil = document.getElementById("pencil");
+        let whiteLine = document.getElementById("whiteLine");
+        let menu = document.getElementById("menu");
+
+
+
+
+        if(open) {
+                setOpen(!open);
+                circles.style.opacity = 1;
+                ruler.style.transform = "rotate(45deg)";
+                pencil.style.transform = "rotate(-45deg)";
+                whiteLine.style.transform = "rotate(0deg)";
+                menu.style.left = "0";
+        }
+        else {
+                setOpen(!open);
+                circles.style.opacity = 0;
+                ruler.style.transform = "rotate(0deg)";
+                pencil.style.transform = "rotate(0deg)";
+                whiteLine.style.transform = "rotate(90deg)";
+                menu.style.left = "-100%";
+        }
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+return (<button onClick={handleClick}>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="135px" height="135px" viewBox="0 0 100 100" enable-background="new 0 0 100 100">
+
+
+
+{/* red line: */}
+<g>
+
+
+
+	<path id="redLine" fill="none" stroke="red" stroke-linecap="round" strokeWidth="5" d="M83.899,22.796
+		c5.779,7.446,9.225,16.833,9.225,27.032c0,10.318-3.527,19.805-9.427,27.291"/>
+
+
+
+<path id="whiteLine" fill="none" stroke="white" stroke-linecap="round" strokeWidth="8" d="M80.796,80.442
+		c-7.866,8.146-18.845,13.202-30.992,13.202c-23.925,0-43.32-19.617-43.32-43.816c0-24.199,19.395-43.816,43.32-43.816
+		c12.11,0,23.06,5.026,30.921,13.129"/>
+</g>
+
+
+
+
+
+{/* green circles: */}
+<g id="circles">
 		<circle fill="none" stroke="#65BC46" stroke-width="0.5" stroke-miterlimit="10" cx="49.712" cy="28.566" r="21.511"/>
 		<circle fill="none" stroke="#65BC46" stroke-width="0.5" stroke-miterlimit="10" cx="31.082" cy="39.322" r="21.511"/>
 		<circle fill="none" stroke="#65BC46" stroke-width="0.5" stroke-miterlimit="10" cx="31.082" cy="60.832" r="21.511"/>
@@ -13,16 +89,14 @@
 		<circle fill="none" stroke="#65BC46" stroke-width="0.5" stroke-miterlimit="10" cx="68.342" cy="39.321" r="21.511"/>
 		<circle fill="none" stroke="#65BC46" stroke-width="0.5" stroke-miterlimit="10" cx="49.832" cy="49.205" r="21.557"/>
 		<ellipse fill="none" stroke="#65BC46" stroke-width="0.5" stroke-miterlimit="10" cx="50" cy="50" rx="43.124" ry="43.645"/>
-	</g>
 </g>
-<g id="Layer_4">
-	<path fill="none" stroke="#92278F" stroke-miterlimit="10" d="M83.696,77.119C75.76,87.19,63.527,93.645,49.804,93.645
-		c-23.925,0-43.32-19.617-43.32-43.816c0-24.199,19.395-43.816,43.32-43.816c13.84,0,26.165,6.565,34.095,16.784"/>
-	<path fill="none" stroke="#ED1C24" stroke-miterlimit="10" d="M83.899,22.796c5.779,7.446,9.225,16.833,9.225,27.032
-		c0,10.318-3.527,19.805-9.427,27.291"/>
-</g>
-<g id="riuler">
-	<g>
+
+
+
+
+
+{/* ruler: */}
+<g id="ruler">
 		<path fill-rule="evenodd" clip-rule="evenodd" fill="#65BC46" d="M11.956,42.748c0.044-2.708,0.088-5.416,0.131-8.121
 			c0.028-0.067,0.049-0.133,0.054-0.204c0.002-0.053,0.014-0.104,0.026-0.155c0.226-1.075,1.04-1.909,2.079-2.177
 			c0.079-0.019,0.158-0.044,0.242-0.042c-0.016,0.057-0.024,0.117-0.025,0.177c-0.017,1.059-0.035,2.119-0.052,3.175
@@ -251,13 +325,13 @@
 			c-0.113-0.011-0.202-0.096-0.22-0.21c-0.002-0.04-0.002-0.082-0.002-0.123c0.019-1.045,0.036-2.088,0.053-3.132
 			c0-0.085,0.009-0.164,0.053-0.238c0.044-0.03,0.088-0.061,0.133-0.092c0.25,0.006,0.498,0.01,0.744,0.013
 			C22.272,32.062,22.323,32.094,22.371,32.132z"/>
-		<path fill-rule="evenodd" clip-rule="evenodd" fill="#77C043" d="M14.573,45.455c-0.001-0.008-0.004-0.012-0.005-0.018
-			c0.047-0.002,0.098-0.004,0.145-0.003c12.032,0.194,24.064,0.39,36.097,0.587c12.01,0.195,24.02,0.389,36.029,0.586
-			c0.05,0,0.098-0.005,0.146,0.01v0.014l-0.011,0.002C62.842,46.238,38.708,45.845,14.573,45.455z"/>
-	</g>
+
 </g>
+
+
+
+{/* pencil: */}
 <g id="pencil">
-	<g>
 		<path fill-rule="evenodd" clip-rule="evenodd" fill="#7CC24E" d="M23.547,53.778c19.937,0.369,39.875,0.74,59.81,1.111
 			c0.015,0.043,0.05,0.063,0.098,0.064c0.048,0.121,0.162,0.197,0.247,0.293c0.362,0.412,0.424,1.01,0.118,1.451
 			c-0.146,0.207-0.33,0.379-0.51,0.557c-0.084,0.047-0.175,0.027-0.265,0.025c-19.844-0.37-39.69-0.738-59.534-1.109
@@ -309,6 +383,34 @@
 			c0,0.053-0.05,0.05-0.079,0.063c-0.933,0.396-1.866,0.789-2.798,1.183C88.338,59.836,88.318,59.832,88.3,59.831z"/>
 		<path fill-rule="evenodd" clip-rule="evenodd" fill="#52B848" d="M21.698,58.503c-0.819-0.016-1.637-0.029-2.456-0.043
 			c0.016-0.789,0.029-1.576,0.044-2.365c0.819,0.016,1.636,0.031,2.456,0.045C21.728,56.929,21.713,57.714,21.698,58.503z"/>
-	</g>
 </g>
+
+
+
+
+
+
 </svg>
+</button>)};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
