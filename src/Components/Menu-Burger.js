@@ -70,7 +70,7 @@ return (<button onClick={handleClick}>
 
 
 
-<path id="whiteLine" fill="none" stroke="white" stroke-linecap="round" strokeWidth="8" d="M80.796,80.442
+<path id="whiteLine" fill="none" stroke="white" className="transition-all duration-1000 origin-center rotate-90" stroke-linecap="round" strokeWidth="8" d="M80.796,80.442
 		c-7.866,8.146-18.845,13.202-30.992,13.202c-23.925,0-43.32-19.617-43.32-43.816c0-24.199,19.395-43.816,43.32-43.816
 		c12.11,0,23.06,5.026,30.921,13.129"/>
 </g>
@@ -80,7 +80,7 @@ return (<button onClick={handleClick}>
 
 
 {/* green circles: */}
-<g id="circles">
+<g id="circles" className="transition-all duration-700 opacity-0">
 		<circle fill="none" stroke="#65BC46" stroke-width="0.5" stroke-miterlimit="10" cx="49.712" cy="28.566" r="21.511"/>
 		<circle fill="none" stroke="#65BC46" stroke-width="0.5" stroke-miterlimit="10" cx="31.082" cy="39.322" r="21.511"/>
 		<circle fill="none" stroke="#65BC46" stroke-width="0.5" stroke-miterlimit="10" cx="31.082" cy="60.832" r="21.511"/>
@@ -96,7 +96,7 @@ return (<button onClick={handleClick}>
 
 
 {/* ruler: */}
-<g id="ruler">
+<g id="ruler" className="transition-all duration-700 origin-[40%_45%]">
 		<path fill-rule="evenodd" clip-rule="evenodd" fill="#65BC46" d="M11.956,42.748c0.044-2.708,0.088-5.416,0.131-8.121
 			c0.028-0.067,0.049-0.133,0.054-0.204c0.002-0.053,0.014-0.104,0.026-0.155c0.226-1.075,1.04-1.909,2.079-2.177
 			c0.079-0.019,0.158-0.044,0.242-0.042c-0.016,0.057-0.024,0.117-0.025,0.177c-0.017,1.059-0.035,2.119-0.052,3.175
@@ -331,7 +331,7 @@ return (<button onClick={handleClick}>
 
 
 {/* pencil: */}
-<g id="pencil">
+<g id="pencil" className="origin-[40%_55%] transition-all duration-700">
 		<path fill-rule="evenodd" clip-rule="evenodd" fill="#7CC24E" d="M23.547,53.778c19.937,0.369,39.875,0.74,59.81,1.111
 			c0.015,0.043,0.05,0.063,0.098,0.064c0.048,0.121,0.162,0.197,0.247,0.293c0.362,0.412,0.424,1.01,0.118,1.451
 			c-0.146,0.207-0.33,0.379-0.51,0.557c-0.084,0.047-0.175,0.027-0.265,0.025c-19.844-0.37-39.69-0.738-59.534-1.109

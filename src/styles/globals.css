@@ -96,24 +96,24 @@ h1 {
 
 
 #pencil {
-        transition: all 750ms;
+        /* transition: all 750ms; */
         /* transform-origin: center; */
 
-        transform-origin: 40% 50%;
+        /* transform-origin: 40% 55%; */
 }
 
 
 #ruler {
-        transition: all 750ms;
+        /* transition: all 750ms;
         /* transform-origin: center; */
-        transform-origin: 40% 45%;
+        /* transform-origin: 40% 45%; */
 
 }
 
 
 #circles {
-        opacity: 0;
-        transition: all 750ms;
+        /* opacity: 0; */
+        /* transition: all 750ms; */
 
 }
 
@@ -127,9 +127,9 @@ h1 {
 }
 
 #whiteLine  {
-        transition: all 1000ms;
-        transform-origin: center;
-        transform: rotate(90deg);
+        /* transition: all 1000ms; */
+        /* transform-origin: center; */
+        /* transform: rotate(90deg); */
 }
 
 
